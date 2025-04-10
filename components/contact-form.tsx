@@ -89,8 +89,8 @@ export function ContactForm() {
       // Convert FormData to a plain object
       const formObject = Object.fromEntries(formData)
       
-      // Add the hCaptcha token
-      formObject["h-captcha-response"] = captchaToken
+      // Add the hCaptcha token - using the standard parameter name
+      formObject["g-recaptcha-response"] = captchaToken
 
       // Log the request payload for debugging
       console.log('Form submission payload:', formObject)
