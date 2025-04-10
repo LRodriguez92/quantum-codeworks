@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   title: "Quantum Codeworks | Premium Web Development Agency",
   description:
     "Custom-built, high-performance websites designed for brands that demand excellence. Quantum Codeworks delivers elite digital experiences for luxury brands.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' },
+    ],
+  },
   keywords: "web development, premium websites, luxury web design, high-performance websites, custom web development",
   authors: [{ name: "Quantum Codeworks" }],
   openGraph: {
