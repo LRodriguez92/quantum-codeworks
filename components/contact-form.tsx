@@ -311,11 +311,12 @@ export function ContactForm() {
       <div className="flex justify-center my-6">
         <HCaptcha
           ref={captcha}
-          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY || "YOUR_HCAPTCHA_SITE_KEY"}
+          sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" // Web3Forms free plan site key
           onVerify={(token) => setCaptchaToken(token)}
           theme="dark"
           size="normal"
           onExpire={() => setCaptchaToken(null)}
+          reCaptchaCompat={false} // Important: Set to false as recommended
         />
       </div>
 
