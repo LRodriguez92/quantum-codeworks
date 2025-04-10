@@ -92,9 +92,6 @@ export function ContactForm() {
       // Convert FormData to a plain object
       const formObject = Object.fromEntries(formData)
       
-      // Log the request payload for debugging
-      console.log('Form submission payload:', formObject)
-
       // Submit to Web3Forms
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -106,13 +103,6 @@ export function ContactForm() {
       })
 
       const data = await response.json()
-      
-      // Log the full response for debugging
-      console.log('Web3Forms Response:', {
-        status: response.status,
-        statusText: response.statusText,
-        data: data
-      })
 
       if (data.success) {
         // Reset form
