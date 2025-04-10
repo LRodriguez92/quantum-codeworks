@@ -63,6 +63,18 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
+    // Get form data first to check botcheck
+    const formData = new FormData(formRef.current as HTMLFormElement)
+    
+    // Check if botcheck is checked (spam bot)
+    if (formData.get('botcheck')) {
+      setFormStatus({
+        success: false,
+        message: "Form submission failed.",
+      })
+      return
+    }
+
     if (!captchaToken) {
       setFormStatus({
         success: false,
@@ -74,16 +86,20 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Get form data
-      const formData = new FormData(formRef.current as HTMLFormElement)
-
-      // Add the hCaptcha token to the form data
-      formData.append("h-captcha-response", captchaToken)
+      // Convert FormData to a plain object
+      const formObject = Object.fromEntries(formData)
+      
+      // Add the hCaptcha token
+      formObject["h-captcha-response"] = captchaToken
 
       // Submit to Web3Forms
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formObject),
       })
 
       const data = await response.json()
@@ -110,6 +126,12 @@ export function ContactForm() {
           message: "Thank you for your message. We will be in touch shortly.",
         })
       } else {
+        // Reset captcha on error too
+        if (captcha.current) {
+          captcha.current.resetCaptcha()
+        }
+        setCaptchaToken(null)
+
         // Show error message
         setFormStatus({
           success: false,
@@ -117,6 +139,12 @@ export function ContactForm() {
         })
       }
     } catch (error) {
+      // Reset captcha on error
+      if (captcha.current) {
+        captcha.current.resetCaptcha()
+      }
+      setCaptchaToken(null)
+
       // Show error message
       setFormStatus({
         success: false,
