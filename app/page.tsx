@@ -12,7 +12,7 @@ import { Navbar } from "@/components/navbar"
 import { FAQSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 import { ScrollToSection } from "@/components/scroll-to-section"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, Suspense } from "react"
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +25,9 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-obsidian text-ivory">
       <Navbar />
-      <ScrollToSection />
+      <Suspense>
+        <ScrollToSection />
+      </Suspense>
 
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
