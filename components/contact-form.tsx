@@ -86,12 +86,12 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
+      // The hCaptcha token is already in the form data via the hidden input
+      // No need to append it again
+      
       // Convert FormData to a plain object
       const formObject = Object.fromEntries(formData)
       
-      // Add the hCaptcha token - using the standard parameter name
-      formObject["g-recaptcha-response"] = captchaToken
-
       // Log the request payload for debugging
       console.log('Form submission payload:', formObject)
 
@@ -185,6 +185,9 @@ export function ContactForm() {
 
       {/* Honeypot field to prevent spam */}
       <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
+
+      {/* Hidden hCaptcha response field */}
+      <input type="hidden" name="h-captcha-response" value={captchaToken || ""} />
 
       <div className="grid gap-6 md:grid-cols-2">
         <div className="relative">
@@ -312,6 +315,7 @@ export function ContactForm() {
           onVerify={(token) => setCaptchaToken(token)}
           theme="dark"
           size="normal"
+          onExpire={() => setCaptchaToken(null)}
         />
       </div>
 
