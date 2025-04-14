@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Poppins, Montserrat } from "next/font/google"
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // Initialize the fonts
 const montserrat = Montserrat({
@@ -89,6 +90,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-GLL12ZSD7X" />
       </body>
     </html>
   )
