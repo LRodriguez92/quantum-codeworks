@@ -15,7 +15,7 @@ export default function AnalyticsProvider() {
   return (
     <>
       <CookieConsent />
-      {analyticsEnabled && <GoogleAnalytics gaId="G-GLL12ZSD7X" />}
+      {analyticsEnabled && <GoogleAnalytics gaId="G-GD5C34S2PG" />}
     </>
   )
 } 
