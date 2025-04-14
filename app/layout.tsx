@@ -1,9 +1,10 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { ThemeProvider } from "@/components/theme-provider"
 import { Poppins, Montserrat } from "next/font/google"
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Providers from '@/components/Providers'
+import 'vanilla-cookieconsent/dist/cookieconsent.css'
+import CookieConsent from '@/components/CookieConsent'
 
 // Initialize the fonts
 const montserrat = Montserrat({
@@ -75,6 +76,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${montserrat.variable} ${poppins.variable}`}>
       <body className="min-h-screen bg-obsidian font-poppins text-ivory antialiased overflow-x-hidden">
+        <Providers>
+          {children}
+        </Providers>
+        <CookieConsent />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -87,10 +92,6 @@ export default function RootLayout({
             `,
           }}
         />
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {children}
-        </ThemeProvider>
-        <GoogleAnalytics gaId="G-GLL12ZSD7X" />
       </body>
     </html>
   )
