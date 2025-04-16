@@ -695,8 +695,8 @@ export default function TermsOfServicePage() {
                     <div className="font-poppins text-ivory space-y-4 leading-relaxed">
                       <p>For questions regarding these Terms of Service, please contact:</p>
                       <ul className="list-disc pl-6 space-y-2 text-metallic-silver">
-                        <li>Email: support@quantumcodeworks.com</li>
-                        <li>Website: www.quantumcodeworks.com</li>
+                        <li>Email: hello@QuantumCodeworks.co</li>
+                        <li>Website: www.QuantumCodeworks.co</li>
                       </ul>
                       <p className="mt-4 text-prestige-gold font-medium">
                         By purchasing any service from Quantum Codeworks, you acknowledge and accept these Terms of

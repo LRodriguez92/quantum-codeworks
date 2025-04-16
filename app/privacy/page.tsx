@@ -385,16 +385,11 @@ export default function PrivacyPolicyPage() {
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6 pt-2">
                     <div className="font-poppins text-ivory space-y-4 leading-relaxed">
-                      <p>If you have any questions or concerns about your privacy, you can reach us at:</p>
+                      <p>For questions regarding this Privacy Policy, please contact:</p>
                       <ul className="list-disc pl-6 space-y-2 text-metallic-silver">
-                        <li>Email: privacy@quantumcodeworks.com</li>
-                        <li>Website: www.quantumcodeworks.com</li>
+                        <li>Email: hello@QuantumCodeworks.co</li>
+                        <li>Website: www.QuantumCodeworks.co</li>
                       </ul>
-                      <div className="mt-6 p-4 bg-prestige-gold/10 border border-prestige-gold/30 rounded-lg">
-                        <p className="text-center text-prestige-gold font-medium">
-                          We are committed to protecting your privacy and addressing any concerns promptly.
-                        </p>
-                      </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
