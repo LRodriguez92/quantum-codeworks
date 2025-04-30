@@ -50,26 +50,26 @@ export default function CookieConsentComponent() {
             en: {
               consentModal: {
                 title: 'Cookie Preferences',
-                description: 'We use cookies to enhance your experience and analyze our website traffic.',
-                acceptAllBtn: 'Accept All',
-                acceptNecessaryBtn: 'Only Necessary',
-                showPreferencesBtn: '<button style="color: #F8F5F0; padding: 0.5rem 1rem; outline: none; box-shadow: none;">Customize</button>'
+                description: '<p style="color: #F8F5F0; font-size: 1rem;">We use cookies to enhance your experience and analyze our website traffic.</p>',
+                acceptAllBtn: '<button style="color: #1E1E1E; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Accept All</button>',
+                acceptNecessaryBtn: '<button style="color: #1E1E1E; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Only Necessary</button>',
+                showPreferencesBtn: '<button style="color: #F8F5F0; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Customize</button>'
               },
               preferencesModal: {
                 title: 'Privacy Preferences',
-                acceptAllBtn: 'Accept All',
-                acceptNecessaryBtn: 'Only Necessary',
-                savePreferencesBtn: 'Save Preferences',
+                acceptAllBtn: '<button style="color: #1E1E1E; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Accept All</button>',
+                acceptNecessaryBtn: '<button style="color: #1E1E1E; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Only Necessary</button>',
+                savePreferencesBtn: '<button style="color: #F8F5F0; padding: 0.5rem 1rem; outline: none; box-shadow: none; font-weight: bold;">Save Preferences</button>',
                 closeIconLabel: 'Close',
                 sections: [
                   {
-                    title: 'Essential Cookies',
-                    description: 'Required for basic site functionality.',
+                    title: '<div style="color: #1E1E1E; font-size: 1rem;">Essential Cookies</div>',
+                    description: '<p style="color: #F8F5F0; font-size: 1rem;">Required for basic site functionality.</p>',
                     linkedCategory: 'necessary'
                   },
                   {
-                    title: 'Analytics',
-                    description: 'Help us improve our website through anonymous usage data.',
+                    title: '<div style="color: #1E1E1E; font-size: 1rem;">Analytics</div>',
+                    description: '<p style="color: #F8F5F0; font-size: 1rem;">Help us improve our website through anonymous usage data.</p>',
                     linkedCategory: 'analytics'
                   }
                 ]

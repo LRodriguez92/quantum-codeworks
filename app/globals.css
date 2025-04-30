@@ -372,3 +372,12 @@
 #cc-main .cc-btn.cc-show-settings span {
   color: #F8F5F0 !important;
 }
+
+/* Update the close button styles to target the correct class */
+#cc-main .pm__close-btn svg {
+  stroke: #F8F5F0 !important; /* Using your ivory white color */
+}
+
+#cc-main .pm__close-btn:hover svg {
+  stroke: #DEC55B !important; /* Changes to gold on hover */
+}
