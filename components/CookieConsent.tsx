@@ -53,7 +53,7 @@ export default function CookieConsentComponent() {
                 description: 'We use cookies to enhance your experience and analyze our website traffic.',
                 acceptAllBtn: 'Accept All',
                 acceptNecessaryBtn: 'Only Necessary',
-                showPreferencesBtn: '<button style="color: #F8F5F0; background: #1E1E1E; padding: 0.5rem 1rem; outline: none; box-shadow: none;">Customize</button>'
+                showPreferencesBtn: '<button style="color: #F8F5F0; padding: 0.5rem 1rem; outline: none; box-shadow: none;">Customize</button>'
               },
               preferencesModal: {
                 title: 'Privacy Preferences',
