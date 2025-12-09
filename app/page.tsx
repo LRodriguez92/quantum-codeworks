@@ -197,7 +197,7 @@ export default function Home() {
             <ScrollReveal delay={100}>
               <Link href="/portfolio/home-design-center">
                 <PortfolioItem
-                  image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hdc-TkNATF98Hxm5XB2Cj40fF5uEYOF7Rf.png"
+                  image="/images/hdc.png"
                   title="The Home Design Center"
                   category="Remodeling Service"
                 />
@@ -206,7 +206,7 @@ export default function Home() {
             <ScrollReveal delay={200}>
               <Link href="/portfolio/ugc-vessup">
                 <PortfolioItem
-                  image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sLtKW6TBmtt4X7q2VWrmsPrczpa79o.png"
+                  image="/images/ugc.png"
                   title="Carlos Vessup"
                   category="Content Creator"
                 />
@@ -215,7 +215,7 @@ export default function Home() {
             <ScrollReveal delay={300}>
               <Link href="/portfolio/elegant-spaces">
                 <PortfolioItem
-                  image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oKXlohqNB2vndHXaWSDIEPURICwIbK.png"
+                  image="/images/elegant.png"
                   title="Elegant Spaces"
                   category="Interior Design"
                 />

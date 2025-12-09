@@ -188,7 +188,7 @@ export function Navbar() {
             ) : (
               <div className="transition-all duration-300 gold-glow-hover">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png"
+                  src="/logo-transparent.png"
                   alt="Quantum Codeworks"
                   width={360}
                   height={90}
@@ -263,7 +263,7 @@ export function Navbar() {
               >
                 <div className="w-48">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png"
+                    src="/logo-transparent.png"
                     alt="Quantum Codeworks"
                     width={200}
                     height={200}

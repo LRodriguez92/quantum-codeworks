@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils"
 const portfolioItems = [
   {
     id: "home-design-center",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hdc-TkNATF98Hxm5XB2Cj40fF5uEYOF7Rf.png",
+    image: "/images/hdc.png",
     title: "The Home Design Center",
     category: "Remodeling Service",
     description:
@@ -30,7 +30,7 @@ const portfolioItems = [
   },
   {
     id: "ugc-vessup",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sLtKW6TBmtt4X7q2VWrmsPrczpa79o.png",
+    image: "/images/ugc.png",
     title: "Carlos Vessup",
     category: "Content Creator",
     description:
@@ -48,7 +48,7 @@ const portfolioItems = [
   },
   {
     id: "elegant-spaces",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oKXlohqNB2vndHXaWSDIEPURICwIbK.png",
+    image: "/images/elegant.png",
     title: "Elegant Spaces",
     category: "Interior Design",
     description:

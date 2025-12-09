@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Quantum Codeworks",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png",
+        url: "/logo-transparent.png",
         width: 1200,
         height: 630,
         alt: "Quantum Codeworks",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "Quantum Codeworks | Premium Web Development Agency",
     description: "Custom-built, high-performance websites designed for brands that demand excellence.",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png",
+      "/logo-transparent.png",
     ],
   },
   robots: {

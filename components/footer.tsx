@@ -98,7 +98,7 @@ export function Footer() {
               onClick={(e) => handleNavItemClick("Home", "/", e)}
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png"
+                src="/logo-transparent.png"
                 alt="Quantum Codeworks Logo"
                 width={120}
                 height={30}

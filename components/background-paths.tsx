@@ -75,7 +75,7 @@ export default function BackgroundPaths({
         >
           <div className="mx-auto mb-8 w-48 md:w-56">
             <motion.img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/quantum-gold-transparent-EdKV0yEOuegb4yhLN7yjBL7IZxoozW.png"
+              src="/logo-transparent.png"
               alt="Quantum Codeworks Logo"
               width={300}
               height={300}
